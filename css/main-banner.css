@@ -1,6 +1,6 @@
 .main-banner {
     background: url("/image/img_11.jpg");
-    height: 100vh;
+    height: calc(100vh - 50px);
     background-position: center center;
     background-size: cover;
     display: flex;
@@ -18,7 +18,6 @@
     font-weight: bold;
     background: rgba(0, 0, 0, 0.5);
     transition: 0.3s;
-    
 }
 
 .main-banner__button:hover {
