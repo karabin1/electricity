@@ -1,0 +1,43 @@
+.information {
+    height: 50px;
+    background: rgb(255, 136, 0);
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 991px) {
+    .information {
+        top: 60px;
+    }
+}
+
+.information__item {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.information__item-img {
+    padding-right: 5px;
+    height: 30px;
+}
+
+.information__item-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+@media(max-width: 767px) {
+    .information__item-link {
+        font-size: 16px;
+    }
+}
+
+.test {
+    height: 100px;
+}
+
