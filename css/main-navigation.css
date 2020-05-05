@@ -18,6 +18,8 @@
 
 .mian-navigation__logo-image {
     width: 80px;
+    transition: 1s;
+    transition-property: transform;
 }
 
 @media (max-width: 991px){
@@ -32,6 +34,10 @@
     font-size: 35px;
     display: flex;
     align-items: center;
+}
+
+.main-navigation__logo-link:hover .mian-navigation__logo-image {
+    transform: rotate(360deg);
 }
 
 @media (max-width: 991px){
