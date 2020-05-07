@@ -16,6 +16,12 @@
     border-bottom: 2px solid rgb(255, 136, 0);
 }
 
+@media (max-width: 700px) {
+    .about-us__header {
+        font-size: 38px;
+    }
+}
+
 .about-us:hover .about-us__header {
     border-bottom: 3px solid rgb(255, 136, 0);
     padding-bottom: 0;
