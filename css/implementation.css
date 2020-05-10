@@ -34,53 +34,49 @@
     display: flex;
     flex-direction: column;
     background-image: url("../image/img_10.jpg");
-    background-size: cover;
-}
-
-.implementation__items--open .implementation__item {
-    max-height: 2000px;
-    transition: max-height 1s;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-size: 1180px;
 }
 
 .implementation__item {
     min-height: 150px;
     max-height: 150px;
     width: 100%;
+    margin: 8px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    transition: background-color 1s;
+    transition: max-height 1s cubic-bezier(0, 1, 0, 1), background-color 1s;
+    overflow: hidden;
 }
 
 .implementation__items--open .implementation__item {
     max-height: 2000px;
-    transition: max-height 1s;
+    transition: max-height 1s, background-color 1s;
     background-color: rgba(255, 255, 255, 0.5);
+    overflow: unset;
 }
 
 .implementation__item-img {
     height: 200px;
-    width: 270px;
+    width: 275px;
     margin: 5px;
-    border: 2px solid rgb(255, 136, 0);
-    background-color: #ccc;
-    display: none;
-    transition: transform 0.5s;
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+    box-shadow: 0 0 2px 2px white;
 }
 
 .implementation__item-img:hover {
-    transform: scale(1.25);
+    transform: scale(1.1);
 }
 
 .implementation__items--open .implementation__item-img {
-    display: unset;
+    opacity: 1;
 }
 
 .implementation__item-button {
     border: none;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 15px 0;
     font-size: 25px;
