@@ -1,36 +1,10 @@
 .services {
-    width: 1180px;
-    margin: auto;
-    max-width: 100%;
-    padding: 0 10px;
-}
-
-.services__header {
-    text-transform: uppercase;
-    font-size: 50px;
-    margin: 30px 0;
-    padding-bottom: 1px;
-    border-bottom: 2px solid rgb(255, 136, 0);
-}
-
-@media (max-width: 700px) {
-    .services__header {
-        font-size: 38px;
-    }
-}
-
-.services:hover .services__header {
-    border-bottom: 3px solid rgb(255, 136, 0);
-    padding-bottom: 0;
-}
-
-.services__column {
     display: flex;
     justify-content: space-between;
 }
 
 @media(max-width: 780px) {
-    .services__column {
+    .services {
         flex-wrap: wrap;
     }
 }
