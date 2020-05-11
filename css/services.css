@@ -51,6 +51,7 @@
     height: 60px;
     display: block;
     margin: 0 auto -80px;
+    z-index: 2;
 }
 
 .services__item-border {
@@ -66,6 +67,10 @@
 }
   
 .services__item-border:hover {
+    transform: rotate(180deg);
+}
+
+.services__item-img:hover ~ .services__item-border {
     transform: rotate(180deg);
 }
 
