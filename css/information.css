@@ -1,6 +1,6 @@
 .information {
     height: 50px;
-    background: rgb(255, 136, 0);
+    background: var(--color-primary);
     position: relative;
     top: 80px;
     display: flex;
