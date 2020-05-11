@@ -33,27 +33,37 @@
     margin: 5px 0;
     display: flex;
     flex-direction: column;
-    background-image: url("../image/img_10.jpg");
     background-size: 1180px;
+}
+
+.implementation__items-realization {
+    background-image: url("../image/img_10.jpg");
+}
+
+.implementation__items-photovoltaics {
+    background-image: url("../image/img_18.jpg");
+}
+
+.implementation__items-other {
+    background-image: url("../image/img_13.jpg");
 }
 
 .implementation__item {
     min-height: 150px;
     max-height: 150px;
     width: 100%;
-    margin: 8px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    transition: max-height 1s cubic-bezier(0, 1, 0, 1), background-color 1s;
+    transition: max-height 1s cubic-bezier(0, 1, 0, 1), background-color 0.2s;
     overflow: hidden;
     pointer-events: none;
 }
 
 .implementation__items--open .implementation__item {
     max-height: 2000px;
-    transition: max-height 1s, background-color 1s;
+    transition: max-height 1s, background-color 0.2s;
     background-color: rgba(255, 255, 255, 0.5);
     overflow: unset;
     pointer-events: unset;
@@ -94,14 +104,15 @@
     width: 100%;
     height: auto;
     top: 50vh;
-    transform: translateY(-50%);
+    left: 50vw;
+    transform: translate(-50%, -50%);
 }
 
 .implementation__item-button {
     border: none;
     background: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 15px 0;
+    padding: 12px 0;
     font-size: 25px;
 }
 
