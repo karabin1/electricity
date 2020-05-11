@@ -6,15 +6,15 @@
 }
 
 .implementation__items-realization {
-    background-image: url("../image/img_10.jpg");
+    background-image: url("../image/realization_background.jpg");
 }
 
 .implementation__items-photovoltaics {
-    background-image: url("../image/img_18.jpg");
+    background-image: url("../image/photovoltaics_background.jpg");
 }
 
 .implementation__items-other {
-    background-image: url("../image/img_13.jpg");
+    background-image: url("../image/other_background.jpg");
 }
 
 .implementation__item {
